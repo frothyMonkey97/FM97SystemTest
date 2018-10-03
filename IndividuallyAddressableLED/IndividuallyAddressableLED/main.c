@@ -24,7 +24,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -34,8 +33,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//First bit (1)
+	//G7 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -45,7 +43,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -55,8 +52,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Second bit (1)
+	//G6 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -66,7 +62,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -76,8 +71,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Third bit (1)
+	//G5 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -87,7 +81,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -97,8 +90,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Fourth bit (1)
+	//G4 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -108,7 +100,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -118,8 +109,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Fifth bit (1)
+	//G3 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -129,7 +119,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -139,8 +128,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Sixth bit (1)
+	//G2 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -150,7 +138,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -160,8 +147,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Seventh bit (1)
+	//G1 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -171,7 +157,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -181,8 +166,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Eighth bit (1)
+	//G0 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -192,7 +176,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -202,8 +185,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Nineth bit (1)
+	//R7 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -213,7 +195,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -223,8 +204,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Tenth bit (1)
+	//R6 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -234,7 +214,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -244,8 +223,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Eleventh bit (1)
+	//R5 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -255,7 +233,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -265,8 +242,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Twelfe bit (1)
+	//R4 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -276,7 +252,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -286,8 +261,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Thirteenth bit (1)
+	//R3 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -297,7 +271,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -307,8 +280,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Fourteenth bit (1)
+	//R2 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -318,7 +290,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -328,8 +299,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Fifteenth bit (1)
+	//R1 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -339,7 +309,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -349,8 +318,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Sixteenth bit (1)
+	//R0 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -360,7 +328,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -370,8 +337,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Seventeenth bit (1)
+	//B7 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -381,7 +347,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -391,8 +356,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Eighteenth bit (1)
+	//B6 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -402,7 +366,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -412,8 +375,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Nineteenth bit (1)
+	//B5 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -423,7 +385,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -433,8 +394,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Twentyth bit (1)
+	//B4 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -444,7 +404,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -454,8 +413,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Twenty first bit (1)
+	//B3 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -465,7 +423,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -475,8 +432,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Twenty Second bit (1)
+	//B2 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -486,7 +442,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -496,8 +451,7 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Twenty Third bit (1)
+	//B1 (1)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -507,7 +461,6 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
@@ -517,12 +470,11 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	//Twenty Fourth bit (1)
+	//B0(1)
 
 	PORTB = 0x01;
 
-	_delay_us(100);
+	//_delay_us(100);
 
     while (1) 
     {
