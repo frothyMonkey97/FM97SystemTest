@@ -17,6 +17,7 @@
 #include <avr/cpufunc.h>
 #include <util/delay.h>
 #include "initialization.h"
+#include "sk6812MINIinterface.h"
 
 
 #endif /* MAIN_H_ */

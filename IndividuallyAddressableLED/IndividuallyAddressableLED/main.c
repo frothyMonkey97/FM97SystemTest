@@ -14,12 +14,9 @@ int main(void)
 	_delay_ms(250);
 
 
-	//Hard coding the value for white into the system for a single LED.
+	//Hard coding the value for white into the system for two LEDs.
+	//LED 1
 	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
 	_NOP();
 	_NOP();
 	_NOP();
@@ -29,11 +26,16 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
+	
 	_NOP();
 	_NOP();
 	_NOP();
 	_NOP();
-	//G7 (1)
+	_NOP();
+	_NOP();
+	_NOP();
+	_NOP();
+	//G7 (0)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -172,20 +174,21 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
 	_NOP();
 	_NOP();
+	
 	_NOP();
 	_NOP();
 	_NOP();
 	_NOP();
-	//R7 (1)
+	_NOP();
+	_NOP();
+	_NOP();
+	_NOP();
+	//R7 (0)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -324,20 +327,21 @@ int main(void)
 	_NOP();
 	_NOP();
 	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
 	PORTD = 0x00;
 	_NOP();
 	_NOP();
 	_NOP();
 	_NOP();
+	
 	_NOP();
 	_NOP();
 	_NOP();
 	_NOP();
-	//B7 (1)
+	_NOP();
+	_NOP();
+	_NOP();
+	_NOP();
+	//B7 (0)
 	PORTD = 0x01;
 	_NOP();
 	_NOP();
@@ -472,9 +476,46 @@ int main(void)
 	_NOP();
 	//B0(1)
 
+	
+
+
 	PORTB = 0x01;
 
-	//_delay_us(100);
+	_delay_ms(2000);
+
+	PORTB = 0x00;
+
+	_delay_ms(2000);
+
+	for (int i = 0; i < 14; i++)
+	{
+		sendOne();
+	}
+	for (int i = 0; i < 10; i++)
+	{
+		sendZero();
+	}
+
+
+	for (int i = 0; i < 24; i++)
+	{
+		sendZero();
+	}
+
+	PORTB = 0x01;
+
+	_delay_ms(2000);
+
+	for (int i = 0; i < 24; i++)
+	{
+		sendZero();
+	}
+
+	PORTB = 0x00;
+
+	dispOneLED(0b001111110011111100111111);
+
+	PORTB = 0x01;
 
     while (1) 
     {
