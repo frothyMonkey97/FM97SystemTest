@@ -47,10 +47,22 @@
 		{
 			sendZero();
 		}
-		else if((input & mask) == 1)
+		else if((input & mask) != 0)
+		{
+			sendOne();
+		}
+		else
 		{
 			sendOne();
 		}
 		mask <<= 1;
+	}
+ }
+
+ void clear(uint8_t numbLEDs)
+ {
+	for(int i = 0; i < numbLEDs; i++)
+	{
+		dispOneLED(0x00);
 	}
  }

@@ -10,517 +10,82 @@
 
 int main(void)
 {
+	//Setting up the micro-controllers ports and delaying so the system and peripherals can get setup.
     initialization();
 	_delay_ms(250);
 
-
-	//Hard coding the value for white into the system for two LEDs.
-	//LED 1
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G7 (0)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G6 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G5 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G4 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G3 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G2 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G1 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//G0 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R7 (0)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R6 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R5 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R4 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R3 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R2 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R1 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//R0 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B7 (0)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B6 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B5 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B4 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B3 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B2 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B1 (1)
-	PORTD = 0x01;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	PORTD = 0x00;
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	_NOP();
-	//B0(1)
-
-	
-
-
+	//Indicator LED turned on.
 	PORTB = 0x01;
 
+	//Display a row of 72 red.
+	for(int i = 0; i < 72; i++)
+	{
+		dispOneLED(0b000000001111111100000000);
+	}
+
+	//Allowing display to hold.
 	_delay_ms(2000);
 
-	PORTB = 0x00;
+	//Display a row of 72 red blue.
+	for(int i = 0; i < 72; i++)
+	{
+		dispOneLED(0b111111111111111100000000);
+	}
 
+	//Allowing display to hold.
 	_delay_ms(2000);
 
-	for (int i = 0; i < 14; i++)
+	//Display a row of 72 blue
+	for(int i = 0; i < 72; i++)
 	{
-		sendOne();
-	}
-	for (int i = 0; i < 10; i++)
-	{
-		sendZero();
+		dispOneLED(0b111111110000000000000000);
 	}
 
-
-	for (int i = 0; i < 24; i++)
-	{
-		sendZero();
-	}
-
-	PORTB = 0x01;
-
+	//Allowing display to hold.
 	_delay_ms(2000);
 
-	for (int i = 0; i < 24; i++)
+	//Display a row of 72 blue green
+	for(int i = 0; i < 72; i++)
 	{
-		sendZero();
+		dispOneLED(0b111111110000000011111111);
 	}
 
-	PORTB = 0x00;
+	//Allowing display to hold.
+	_delay_ms(2000);
 
-	dispOneLED(0b001111110011111100111111);
+	//Display a row of 72 green
+	for(int i = 0; i < 72; i++)
+	{
+		dispOneLED(0b000000000000000011111111);
+	}
 
-	PORTB = 0x01;
+	//Allowing display to hold.
+	_delay_ms(2000);
+
+	//Display a row of 72 green red.
+	for(int i = 0; i < 72; i++)
+	{
+		dispOneLED(0b000000001111111111111111);
+	}
+
+	//Allowing display to hold.
+	_delay_ms(2000);
+
+	//Display a row of 72 white
+	for(int i = 0; i < 72; i++)
+	{
+		dispOneLED(0b111111111111111111111111);
+	}
+
+	//Allowing display to hold.
+	_delay_ms(2000);
+
+	//Clearing display
+	clear(72);
 
     while (1) 
     {
 		
-
     }
 }
 

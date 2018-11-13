@@ -14,5 +14,6 @@
 void sendOne(void);
 void sendZero(void);
 void dispOneLED(uint32_t);
+void clear(uint8_t);
 
 #endif /* SK6812MINIINTERFACE_H_ */
