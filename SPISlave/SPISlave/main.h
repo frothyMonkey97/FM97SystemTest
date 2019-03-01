@@ -1,8 +1,8 @@
 /*
  * main.h
  *
- * Created: 9/18/2018 10:33:40 AM
- *  Author: Morgan
+ * Created: 2/28/2019 8:10:22 PM
+ *  Author: mffields
  */ 
 
 
@@ -10,14 +10,13 @@
 #define MAIN_H_
 
 #ifndef F_CPU
-	#define F_CPU 16000000UL  //16MHz Clock (external)
+#define F_CPU 16000000UL  //16MHz Clock (external)
 #endif
 
 #include <avr/io.h>
 #include <avr/cpufunc.h>
 #include <util/delay.h>
-#include "initialization.h"
-#include "sk6812MINIinterface.h"
-
+#include "Initialize.h"
+#include "SPISlaveInitialize.h"
 
 #endif /* MAIN_H_ */
