@@ -15,7 +15,7 @@
 
 	//Setting the SS pin to logic high in the hopes that the slave won't 
 	//start looking for a SCK signal.
-	PORTB = 0x10;
+	PORTB = 0x00;
 
 	/**********************************************************************
 		7		6		5		4		3		2		1		0
@@ -53,7 +53,7 @@
 		0-SPR0 - SPI Clock Rate Select 0
 			Does not matter as this is a slave device.
 	**********************************************************************/
-	SPCR = 0xCC;
+	SPCR = 0xCF;
 
 	/**********************************************************************
 		7		6		5		4		3		2		1		0

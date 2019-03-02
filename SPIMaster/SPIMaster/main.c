@@ -16,14 +16,30 @@ int main(void)
 	//Initializing the MCU
 	initialize();
 	SPIinitializeMaster();
+	sei();
 
 	//Over precaution because why the actual fuck not.
 	_delay_ms(50);
 
-	PORTC = 0x01;
+	PORTA = 0xFF;
+
+	_delay_ms(2000);
+
+	PORTA = 0x00;
+
+	_delay_ms(500);
+
+	PORTB = PORTB ^ 0x08;
+	SPDR = 0xAA;
     /* Replace with your application code */
     while (1) 
     {
+		
     }
 }
 
+ISR(SPI_STC_vect)
+{
+	PORTA = SPDR;
+	PORTB = PORTB ^ 0x08;
+}
