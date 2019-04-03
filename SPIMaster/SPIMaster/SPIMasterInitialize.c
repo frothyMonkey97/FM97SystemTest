@@ -51,12 +51,12 @@
 		1-SPR1 - SPI Clock Rate Select 1
 			This is likely to change based off of testing, but the goal is
 			to have it run as fast as possible.
-			As of 6:50 02/28/19, set to 0.
+			As of 4:09 03/01/19, set to 0.
 
 		0-SPR0 - SPI Clock Rate Select 0
 			This is likely to change based off of testing, but the goal is
 			to have it run as fast as possible.
-			As of 6:50 02/28/19, set to 0.
+			As of 4:09 03/01/19, set to 0.
 	**********************************************************************/
 	SPCR = 0xDC;
 

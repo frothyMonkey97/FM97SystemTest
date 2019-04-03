@@ -14,6 +14,7 @@
 #endif
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
 #include <avr/cpufunc.h>
 #include <util/delay.h>
 #include "Initialize.h"

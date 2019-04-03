@@ -9,10 +9,10 @@
 
  void initialize(void)
  {
-	//Set port C to be all input excluding pin 1 (PORTC PIN1) to be output
-	DDRC = 0x01;
+	//Set port A to be all output
+	DDRA = 0xFF;
 
-	//Set port C to have all pins be logic low
-	PORTC = 0x00;
+	//Set port A to have all pins be logic low
+	PORTA = 0x00;
 	
  }
